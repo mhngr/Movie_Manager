@@ -6,7 +6,7 @@ from ..serializers import MovieSerializer
 from ..models import Movie
 
 
-class MakeMovie(APIView):
+class RegisterMovie(APIView):
 
     def post(self, request, *args, **kwargs):
         data = request.data
