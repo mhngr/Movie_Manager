@@ -6,6 +6,6 @@ from ..serializers import APICallSerializer
 
 class APICallData(APIView):
     def get(self, request):
-        apicalls = APICall.objects.all().order_by('-timestamp')
-        serializer = APICallSerializer(apicalls, many=True)
+        api_calls = APICall.objects.all().order_by('-timestamp')
+        serializer = APICallSerializer(api_calls, many=True)
         return Response(serializer.data)

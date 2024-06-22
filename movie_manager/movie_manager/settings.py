@@ -49,7 +49,8 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "movie_management.APICallTrackingMiddleware",
+    "movie_management.middlewares.API_call_tracker_middleware.APICallTrackingMiddleware",
+
 ]
 
 ROOT_URLCONF = "movie_manager.urls"
